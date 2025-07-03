@@ -6,28 +6,28 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Pergunta 1",
+        enunciado: "Alternativa 1",Qual tipo sanguíneo voce acha que deveria ser mais valorizado nas campanhas de doação de sangue
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Tipo O",
+            "Tpo B"
         ]
     },
     {
-        enunciado: "Pergunta 2",
+        enunciado: "Se voce pudesse escolher seu tipo sanguíneo por estilo, qual escolheria",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Tipo AB (por ser raro e "exclusivo")",
+            "Tipo A (por ser "organizado" e equilibrado)"
         ]
     },
     {
-        enunciado: "Pergunta 3",
+        enunciado: "Qual tipo sanguíneo voce acha que combinaria com alguém criativo e sonhador",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Tipo B",
+            "Tipo AB"
         ]
     },
     {
-        enunciado: "Pergunta 4",
+        enunciado: "",
         alternativas: [
             "Alternativa 1",
             "Alternativa 2"
