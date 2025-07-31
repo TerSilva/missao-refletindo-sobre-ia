@@ -6,38 +6,48 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Alternativa 1",Qual tipo sanguíneo voce acha que deveria ser mais valorizado nas campanhas de doação de sangue
+        enunciado: "Por que saber o seu tipo sanguíneo é tão importante?",
+        alternativas: [
+            "Pois é crucial para quando voce for realizar transfussões de sangue, pois se caso fizerem com o tipo sanguíneo errado pode causar rejeição de sangue!",
+            "Não é importante, pois qualquer sangue é compátivel no nosso organismo!"
+        ]
+    },
+    {
+        enunciado: "Qual é o tipo sanguíeno que é considerado doador universal?",
+        alternativas: [
+            "Tipo AB",
+            "Tipo O",
+        ]
+    },
+    {
+        enunciado: "Qual o tipo sanguíneo que é considerado receptor universal?",
         alternativas: [
             "Tipo O",
-            "Tpo B"
-        ]
-    },
-    {
-        enunciado: "Se voce pudesse escolher seu tipo sanguíneo por estilo, qual escolheria",
-        alternativas: [
-            "Tipo AB (por ser raro e "exclusivo")",
-            "Tipo A (por ser "organizado" e equilibrado)"
-        ]
-    },
-    {
-        enunciado: "Qual tipo sanguíneo voce acha que combinaria com alguém criativo e sonhador",
-        alternativas: [
-            "Tipo B",
             "Tipo AB"
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Qual tipo de RH que indica a presença do antígeno RH nos globulos vermelhos?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Rh negativo",
+            "Rh positivo"
         ]
     },
     {
-        enunciado: "Pergunta 5",
+        enunciado: "Qual tipo de RH que indica a ausencia do antígeno RH nos globulos vermelhos?",
         alternativas: [
-            "Alternativa 1",
-            "Alternativa 2"
+            "Rh positivo",
+            "Rh negativo"
         ]
-    }
+    },
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
